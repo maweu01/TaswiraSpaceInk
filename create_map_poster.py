@@ -696,7 +696,7 @@ def create_poster(
         color=THEME["text"],
         ha="center",
         fontproperties=font_main_adjusted,
-        zorder=11,
+        zorder=10.5,
     )
 
     ax.text(
