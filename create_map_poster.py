@@ -672,20 +672,18 @@ def create_poster(
         adjusted_font_size = base_adjusted_main
 
     if active_fonts:
-        font_main_adjusted = FontProperties(
+       font_main_adjusted = FontProperties(
             fname=active_fonts["bold"], size=adjusted_font_size
         )
     else:
         font_main_adjusted = FontProperties(
             family="monospace", weight="bold", size=adjusted_font_size
         )
-# --- 3D Pushpin Marker ---
-    # Shadow
-    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', edgecolors='none', alpha=0.3, zorder=10.1, transform=ax.transAxes)
-    # Head
+
+    # --- 3D Pushpin Marker ---
+    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', alpha=0.3, zorder=10.1, transform=ax.transAxes)
     ax.scatter(0.5, 0.5, color='#ED1C24', s=250, marker='o', edgecolors='black', linewidth=1, zorder=10.5, transform=ax.transAxes)
-    # Highlight
-    ax.scatter(0.5, 0.5, color='white', s=50, marker='o', edgecolors='none', zorder=10.6, transform=ax.transAxes)
+    ax.scatter(0.49, 0.51, color='white', s=40, marker='o', zorder=10.6, transform=ax.transAxes)
 
     # --- BOTTOM TEXT ---
     ax.text(
@@ -696,7 +694,7 @@ def create_poster(
         color=THEME["text"],
         ha="center",
         fontproperties=font_main_adjusted,
-        zorder=10.5,
+        zorder=11,
     )
 
     ax.text(
