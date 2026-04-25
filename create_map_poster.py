@@ -689,6 +689,14 @@ def create_poster(
         color=THEME["text"],
         ha="center",
         fontproperties=font_main_adjusted,
+    # --- 3D Pushpin Marker ---
+    # Shadow
+    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', edgecolors='none', alpha=0.3, zorder=10.1, transform=ax.transAxes)
+    # Head
+    ax.scatter(0.5, 0.5, color='#ED1C24', s=250, marker='o', edgecolors='black', linewidth=1, zorder=10.5, transform=ax.transAxes)
+    # Highlight
+    ax.scatter(0.5, 0.5, color='white', s=50, marker='o', edgecolors='none', zorder=10.6, transform=ax.transAxes)
+
         zorder=11,
     )
 
@@ -700,6 +708,14 @@ def create_poster(
         color=THEME["text"],
         ha="center",
         fontproperties=font_sub,
+    # --- 3D Pushpin Marker ---
+    # Shadow
+    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', edgecolors='none', alpha=0.3, zorder=10.1, transform=ax.transAxes)
+    # Head
+    ax.scatter(0.5, 0.5, color='#ED1C24', s=250, marker='o', edgecolors='black', linewidth=1, zorder=10.5, transform=ax.transAxes)
+    # Highlight
+    ax.scatter(0.5, 0.5, color='white', s=50, marker='o', edgecolors='none', zorder=10.6, transform=ax.transAxes)
+
         zorder=11,
     )
 
@@ -721,6 +737,14 @@ def create_poster(
         alpha=0.7,
         ha="center",
         fontproperties=font_coords,
+    # --- 3D Pushpin Marker ---
+    # Shadow
+    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', edgecolors='none', alpha=0.3, zorder=10.1, transform=ax.transAxes)
+    # Head
+    ax.scatter(0.5, 0.5, color='#ED1C24', s=250, marker='o', edgecolors='black', linewidth=1, zorder=10.5, transform=ax.transAxes)
+    # Highlight
+    ax.scatter(0.5, 0.5, color='white', s=50, marker='o', edgecolors='none', zorder=10.6, transform=ax.transAxes)
+
         zorder=11,
     )
 
@@ -730,6 +754,14 @@ def create_poster(
         transform=ax.transAxes,
         color=THEME["text"],
         linewidth=1 * scale_factor,
+    # --- 3D Pushpin Marker ---
+    # Shadow
+    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', edgecolors='none', alpha=0.3, zorder=10.1, transform=ax.transAxes)
+    # Head
+    ax.scatter(0.5, 0.5, color='#ED1C24', s=250, marker='o', edgecolors='black', linewidth=1, zorder=10.5, transform=ax.transAxes)
+    # Highlight
+    ax.scatter(0.5, 0.5, color='white', s=50, marker='o', edgecolors='none', zorder=10.6, transform=ax.transAxes)
+
         zorder=11,
     )
 
@@ -749,6 +781,14 @@ def create_poster(
         ha="right",
         va="bottom",
         fontproperties=font_attr,
+    # --- 3D Pushpin Marker ---
+    # Shadow
+    ax.scatter(0.51, 0.49, color='#000000', s=220, marker='o', edgecolors='none', alpha=0.3, zorder=10.1, transform=ax.transAxes)
+    # Head
+    ax.scatter(0.5, 0.5, color='#ED1C24', s=250, marker='o', edgecolors='black', linewidth=1, zorder=10.5, transform=ax.transAxes)
+    # Highlight
+    ax.scatter(0.5, 0.5, color='white', s=50, marker='o', edgecolors='none', zorder=10.6, transform=ax.transAxes)
+
         zorder=11,
     )
 
